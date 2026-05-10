@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up for Watering</title>
+</head>
+<body>
+    <h1>Sign Up for {{ slot.date }}</h1>
+    <form method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="contact">Contact (email or phone):</label>
+        <input type="text" id="contact" name="contact" required><br>
+        <button type="submit">Sign Up</button>
+    </form>
+    <a href="/day/{{ slot.date }}">Back to Day Detail</a>
+</body>
+</html>

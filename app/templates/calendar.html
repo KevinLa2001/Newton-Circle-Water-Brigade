@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watering Calendar</title>
+</head>
+<body>
+    <h1>Watering Calendar</h1>
+    <style>
+        .status-Open { background-color: #ffcccc; }
+        .status-Filled { background-color: #ccffcc; }
+        .status-Rain { background-color: #cce0ff; }
+        .status-Heat { background-color: #fff7cc; }
+        .status-Past { background-color: #e0e0e0; }
+    </style>
+    <form action="/weather_update" method="get" style="margin-bottom: 1em;">
+        <button type="submit">Update Schedule with Weather</button>
+    </form>
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Assigned To</th>
+            <th>Details</th>
+        </tr>
+        {% for slot in slots %}
+        <tr class="status-{{ slot.status }}{% if slot.is_heat_triggered %} status-Heat{% endif %}">
+            <td>{{ slot.date.strftime('%A') }}</td>
+            <td>{{ slot.date }}</td>
+            <td>
+                {% if slot.is_heat_triggered %}
+                    Heat-Triggered
+                {% else %}
+                    {{ slot.status }}
+                {% endif %}
+            </td>
+            <td>
+                <form method="post" action="/assign_user" style="margin:0;display:inline;">
+                    <input type="hidden" name="slot_date" value="{{ slot.date }}">
+                    <select name="assigned_to" onchange="this.form.submit()">
+                        <option value="" {% if not slot.assigned_to %}selected{% endif %}>Missing</option>
+                        {% for user in users %}
+                            <option value="{{ user.name }}" {% if slot.assigned_to == user.name %}selected{% endif %}>{{ user.name }}</option>
+                        {% endfor %}
+                        <option value="__new__">New...</option>
+                    </select>
+                </form>
+            </td>
+            <td><a href="/day/{{ slot.date }}">View</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to Home</a>
+</body>
+</html>
