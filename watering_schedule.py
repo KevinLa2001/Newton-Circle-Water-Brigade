@@ -14,7 +14,7 @@ class WateringSlot:
     def __init__(self, date_: date, is_heat_triggered=False, is_rain_day=False, rain_probability=0, high_temp=None, weather_code=None):
         self.id = str(uuid.uuid4())
         self.date = date_
-        self.assigned_to: Optional[str] = None
+        self.assigned_to: Optional[str] = 'N/A'
         self.status = 'Open'  # Open, Filled, Rain, Past
         self.is_heat_triggered = is_heat_triggered
         self.is_rain_day = is_rain_day
@@ -24,10 +24,10 @@ class WateringSlot:
         self.notifications_sent = False
 
 class User:
-    def __init__(self, name: str, contact: str, is_admin=False):
+    def __init__(self, name: str, contacts=None, is_admin=False):
         self.id = str(uuid.uuid4())
         self.name = name
-        self.contact = contact
+        self.contacts = contacts if contacts is not None else ["", ""]
         self.is_admin = is_admin
 
 class AdminSettings:
@@ -37,11 +37,17 @@ class AdminSettings:
         self.auto_clear_on_rain = True
         self.season_start = date(date.today().year, 5, 10)
         self.season_end = date(date.today().year, 9, 30)
-        self.watering_pattern = [0, 2, 4, 5, 6]  # Mon, Wed, Fri, Sat, Sun
+        self.watering_pattern = [0, 1, 2, 3, 4, 5, 6]  # All days (Mon-Sun)
 
 # --- Core Logic ---
 
 class WateringScheduler:
+    def assign_octavia_to_mondays(self):
+        for slot in self.slots:
+            if slot.date.weekday() == 0:  # Monday
+                slot.assigned_to = 'Octavia'
+                slot.status = 'Filled'
+
     def __init__(self, settings: AdminSettings):
         self.settings = settings
         self.slots: List[WateringSlot] = []

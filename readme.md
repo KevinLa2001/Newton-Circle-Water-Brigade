@@ -365,3 +365,5 @@ This app is optimized for:
 Ready for implementation.
 
 # Newton-Circle-Water-Brigade
+https://kevinla2001.github.io/Newton Circle Water Brigade
+https://kevinla2001.github.io/Newton-Circle-Water-Brigade

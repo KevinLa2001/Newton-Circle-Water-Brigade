@@ -1,0 +1,1442 @@
+[
+  {
+    "date": "2026-05-10",
+    "assigned_to": "Kevin Larkin",
+    "status": "Filled",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-11",
+    "assigned_to": "",
+    "status": "Filled",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-12",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-13",
+    "assigned_to": "Matt and Nate",
+    "status": "Filled",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-14",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-15",
+    "assigned_to": "Kip and Greg",
+    "status": "Filled",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-16",
+    "assigned_to": "Melissa Scott",
+    "status": "Filled",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-17",
+    "assigned_to": "Kevin Larkin",
+    "status": "Filled",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-18",
+    "assigned_to": "Octavia and Jon",
+    "status": "Filled",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-19",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-20",
+    "assigned_to": "Matt and Nate",
+    "status": "Filled",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-21",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-22",
+    "assigned_to": "Kip and Greg",
+    "status": "Filled",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-23",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-24",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-25",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-26",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-27",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-28",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-29",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-30",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-05-31",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-01",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-02",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-03",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-04",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-05",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-06",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-07",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-08",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-09",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-10",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-11",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-12",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-13",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-14",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-15",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-16",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-17",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-18",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-19",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-20",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-21",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-22",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-23",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-24",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-25",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-26",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-27",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-28",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-29",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-06-30",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-01",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-02",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-03",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-04",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-05",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-06",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-07",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-08",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-09",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-10",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-11",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-12",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-13",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-14",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-15",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-16",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-17",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-18",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-19",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-20",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-21",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-22",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-23",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-24",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-25",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-26",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-27",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-28",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-29",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-30",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-07-31",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-01",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-02",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-03",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-04",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-05",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-06",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-07",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-08",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-09",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-10",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-11",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-12",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-13",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-14",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-15",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-16",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-17",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-18",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-19",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-20",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-21",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-22",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-23",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-24",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-25",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-26",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-27",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-28",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-29",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-30",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-08-31",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-01",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-02",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-03",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-04",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-05",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-06",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-07",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-08",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-09",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-10",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-11",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-12",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-13",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-14",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-15",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-16",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-17",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-18",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-19",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-20",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-21",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-22",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-23",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-24",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-25",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-26",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-27",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-28",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-29",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  },
+  {
+    "date": "2026-09-30",
+    "assigned_to": "N/A",
+    "status": "Open",
+    "is_heat_triggered": false,
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
+  }
+]

@@ -1,10 +1,9 @@
 [
-  {"name": "Octavia", "contact": "octaviagarden@gmail.com"},
-  {"name": "Jon", "contact": "jonrzulauf@gmail.com"},
-  {"name": "Matt", "contact": ""},
-  {"name": "Nate", "contact": ""},
-  {"name": "Kip", "contact": "kip.white@cbrealty.com"},
-  {"name": "Greg", "contact": ""},
-  {"name": "Melissa Scott", "contact": "melissa.chinn.scott@gmail.com"},
-  {"name": "Kevin Larkin", "contact": "kevinla_ms@hotmail.com"}
+  {"name": "Octavia and Jon", "contacts": ["octaviagarden@gmail.com", "jonrzulauf@gmail.com"]},
+  {"name": "Matt and Nate", "contacts": ["", ""]},
+  {"name": "Kip and Greg", "contacts": ["kip.white@cbrealty.com", ""]},
+  {"name": "Melissa Scott", "contacts": ["melissa.chinn.scott@gmail.com", ""]},
+  {"name": "Nance Urner", "contacts": ["nancykurner@gmail.com>", ""]},
+  {"name": "Kevin Larkin", "contacts": ["kevinla_ms@hotmail.com", ""]},
+  {"name": "N/A", "contacts": ["kevinla_ms@hotmail.com", ""]}
 ]

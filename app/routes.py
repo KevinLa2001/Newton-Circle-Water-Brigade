@@ -1,5 +1,6 @@
 
 from flask import Blueprint, render_template, abort, request, redirect, url_for, flash
+from .slot_persistence import save_slots, load_slots
 from datetime import date, timedelta
 
 bp = Blueprint('main', __name__)
@@ -15,7 +16,8 @@ def assign_user():
     # Assign user to slot
     slot_date_obj = date.fromisoformat(slot_date)
     scheduler.assign_user(slot_date_obj, assigned_to)
-    # Persist assignment if needed (optional: could persist slots to file)
+    # Persist slot assignments
+    save_slots(scheduler.slots)
     flash(f'Assigned {assigned_to} to {slot_date}')
     return redirect(url_for('main.calendar'))
 
@@ -57,7 +59,7 @@ def load_users():
     if os.path.exists(USERS_FILE):
         with open(USERS_FILE, 'r') as f:
             data = json.load(f)
-            return [User(u['name'], u['contact']) for u in data]
+            return [User(u['name'], u['contacts']) for u in data]
     else:
         # Initial table if file missing
         initial = [
@@ -76,12 +78,21 @@ def load_users():
 
 def save_users(users):
     with open(USERS_FILE, 'w') as f:
-        json.dump([{"name": u.name, "contact": u.contact} for u in users], f, indent=2)
+            json.dump([{"name": u.name, "contacts": [u.contacts[0]]} for u in users], f, indent=2)
+
+
+def get_slots():
+    # For demo, just return all slots for the current season
+    return scheduler.slots
 
 # Initialize scheduler and generate schedule
 settings = AdminSettings()
 scheduler = WateringScheduler(settings)
-scheduler.generate_schedule()
+persisted_slots = load_slots()
+if persisted_slots:
+    scheduler.slots = persisted_slots
+else:
+    scheduler.generate_schedule()
 
 # Load users from persistent storage
 loaded_users = load_users()
@@ -90,13 +101,6 @@ for person in loaded_users:
     if person.name not in user_names:
         scheduler.users.append(person)
         user_names.add(person.name)
-
-
-# Remove static assignment loop. Assignments should persist and only change when user acts.
-
-def get_slots():
-    # For demo, just return all slots for the current season
-    return scheduler.slots
 
 @bp.route('/')
 def index():
@@ -127,10 +131,10 @@ def signup(date_str):
         abort(404)
     if request.method == 'POST':
         name = request.form['name']
-        contact = request.form['contact']
+        contact = request.form.get('contact', '')
         # Assign user to slot
         from watering_schedule import User
-        user = User(name, contact)
+        user = User(name, [contact])
         scheduler.users.append(user)
         scheduler.assign_user(slot.date, user.name)
         flash('You have signed up!')
