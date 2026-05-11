@@ -1,9 +1,13 @@
 
+# Flask and other imports
 from flask import Blueprint, render_template, abort, request, redirect, url_for, flash
-from .slot_persistence import save_slots, load_slots
-from datetime import date, timedelta
 
 bp = Blueprint('main', __name__)
+
+
+
+from .slot_persistence import save_slots, load_slots
+from datetime import date, timedelta
 
 # Assign user to slot from dropdown
 @bp.route('/assign_user', methods=['POST'])
@@ -26,14 +30,6 @@ def assign_user():
 def new_user():
     slot_date = request.args.get('slot_date') or request.form.get('slot_date')
     if request.method == 'POST':
-        from flask import Blueprint, render_template, abort, request, redirect, url_for, flash
-        from datetime import date, timedelta
-        import sys
-        import os
-        import json
-        sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-        from watering_schedule import WateringScheduler, AdminSettings, User
-
         name = request.form['name']
         email = request.form['email']
         user = User(name, email)
@@ -47,9 +43,11 @@ def new_user():
     return render_template('new_user.html', slot_date=slot_date)
 
 
+
 import sys
 import os
 import json
+import time
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from watering_schedule import WateringScheduler, AdminSettings, User
 
@@ -106,11 +104,43 @@ for person in loaded_users:
 def index():
     return render_template('index.html')
 
+from datetime import datetime, timedelta
+
 @bp.route('/calendar')
 def calendar():
+    # Only update weather if more than 1 hour has passed since last update
+    WEATHER_CACHE_FILE = os.path.join(os.path.dirname(__file__), '..', 'weather_last_update.txt')
+    now = time.time()
+    last_update = 0
+    if os.path.exists(WEATHER_CACHE_FILE):
+        try:
+            with open(WEATHER_CACHE_FILE, 'r') as f:
+                last_update = float(f.read().strip())
+        except Exception:
+            last_update = 0
+    if now - last_update > 4 * 3600:
+        from weather import get_weather_forecast
+        rain_forecast = {}
+        heat_forecast = {}
+        for slot in scheduler.slots:
+            rain_prob, high_temp, weather_code = get_weather_forecast(slot.date)
+            slot.rain_probability = rain_prob if rain_prob is not None else 0
+            slot.high_temp = high_temp if high_temp is not None else None
+            slot.weather_code = weather_code if weather_code is not None else None
+            if rain_prob is not None:
+                rain_forecast[slot.date] = rain_prob
+            if high_temp is not None:
+                heat_forecast[slot.date] = high_temp
+        scheduler.apply_rain_rule(rain_forecast, temp_forecast=heat_forecast)
+        scheduler.apply_heat_rule(heat_forecast)
+        save_slots(scheduler.slots)
+        with open(WEATHER_CACHE_FILE, 'w') as f:
+            f.write(str(now))
+        flash('Weather was automatically updated for the schedule.')
     slots = get_slots()
     users = scheduler.users
-    return render_template('calendar.html', slots=slots, users=users)
+    today = datetime.now().date()
+    return render_template('calendar.html', slots=slots, users=users, today=today, timedelta=timedelta)
 
 @bp.route('/day/<date_str>')
 def day_detail(date_str):
@@ -165,17 +195,20 @@ def weather_update():
     from weather import get_weather_forecast
     rain_forecast = {}
     heat_forecast = {}
-    weather_codes = {}
     for slot in scheduler.slots:
         rain_prob, high_temp, weather_code = get_weather_forecast(slot.date)
+        # Always set the values, even if None (for >7 days out, will be None)
+        slot.rain_probability = rain_prob if rain_prob is not None else 0
+        slot.high_temp = high_temp if high_temp is not None else None
+        slot.weather_code = weather_code if weather_code is not None else None
         if rain_prob is not None:
             rain_forecast[slot.date] = rain_prob
         if high_temp is not None:
             heat_forecast[slot.date] = high_temp
-        if weather_code is not None:
-            slot.weather_code = weather_code
     # Pass both rain and temp forecasts to apply_rain_rule
     scheduler.apply_rain_rule(rain_forecast, temp_forecast=heat_forecast)
     scheduler.apply_heat_rule(heat_forecast)
+    # Save updated slots to slots.json
+    save_slots(scheduler.slots)
     flash('Weather automation applied to schedule!')
     return redirect(url_for('main.calendar'))

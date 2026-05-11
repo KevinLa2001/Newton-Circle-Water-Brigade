@@ -65,12 +65,23 @@ class WateringScheduler:
         for slot in self.slots:
             if slot.date >= date.today():
                 rain_prob = forecast.get(slot.date, 0)
-                if rain_prob >= self.settings.rain_threshold:
+                # Only mark as rain and clear user if rain_prob is above threshold AND weather_code is not None
+                if rain_prob >= self.settings.rain_threshold and slot.weather_code is not None:
+                    print(f"[DEBUG] Setting slot {slot.date} to Rain. Setting assigned_to to 'N/A' (was: {slot.assigned_to})")
                     slot.status = 'Rain'
                     slot.is_rain_day = True
                     slot.rain_probability = rain_prob
                     if self.settings.auto_clear_on_rain:
-                        slot.assigned_to = None
+                        slot.assigned_to = 'N/A'
+                elif slot.weather_code is None:
+                    print(f"[DEBUG] Weather unknown for {slot.date}. assigned_to remains: {slot.assigned_to}")
+                    # Weather unknown: do not change assigned_to or status at all
+                    pass
+                else:
+                    print(f"[DEBUG] Not a rain day for {slot.date}. assigned_to remains: {slot.assigned_to}")
+                    # Not a rain day, weather is known
+                    slot.is_rain_day = False
+                    slot.rain_probability = rain_prob
                 # Set high temperature if provided
                 if temp_forecast and slot.date in temp_forecast:
                     slot.high_temp = temp_forecast[slot.date]
@@ -81,16 +92,21 @@ class WateringScheduler:
                 high_temp = forecast.get(slot.date, 0)
                 # Set high temperature for all slots
                 slot.high_temp = high_temp
-                if high_temp >= self.settings.heat_threshold and slot.date.weekday() not in self.settings.watering_pattern:
-                    # Add heat-triggered slot if not already present
-                    self.slots.append(WateringSlot(date_=slot.date, is_heat_triggered=True, high_temp=high_temp))
+                if high_temp >= self.settings.heat_threshold:
+                    print(f"[DEBUG] Flagging slot {slot.date} as heat-triggered (high_temp={high_temp})")
+                    slot.is_heat_triggered = True
+                    # Do not change assigned_to for heat-triggered days
+                else:
+                    slot.is_heat_triggered = False
 
     def assign_user(self, slot_date: date, user_name: str):
         for slot in self.slots:
             if slot.date == slot_date:
+                print(f"[DEBUG] Assigning user '{user_name}' to slot {slot.date} (was: {slot.assigned_to})")
                 slot.assigned_to = user_name
                 slot.status = 'Filled'
                 return True
+        print(f"[DEBUG] No slot found for date {slot_date} to assign user '{user_name}'")
         return False
 
     def remove_user(self, slot_date: date, user_name: str):
