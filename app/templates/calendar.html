@@ -181,15 +181,14 @@
                 document.getElementById('filterAssigned').addEventListener('change', applyFilter);
             };
             </script>
-        <tr>
-            <th>Day</th>
-            <th>Date</th>
-            <th>Status</th>
-            <th>Weather</th>
-            <th>Assigned To</th>
-            <th>Change Assignment</th>
-            <th>Details</th>
-        </tr>
+            <tr>
+                <th>Day</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Weather</th>
+                <th>Assigned To</th>
+                <th>Change Assignment</th>
+            </tr>
         {% set cutoff = today - timedelta(days=2) %}
         {% for slot in slots %}
             {% set slot_date = slot.date if slot.date.__class__.__name__ == 'date' else slot.date if slot.date.__class__.__name__ == 'datetime' else slot.date|string %}
@@ -229,7 +228,7 @@
                         {% endif %}
                     {% elif slot.status == 'Rain' or slot.is_rain_day %}
                         {% set icon = '🌧️' %}
-                    {% elif slot.status == 'Open' or slot.status == 'Filled' %}
+                    {% elif (slot.status == 'Open' or slot.status == 'Filled') and slot.weather_code is not none %}
                         {% set icon = '☀️' %}
                     {% else %}
                         {% set icon = '❓' %}
@@ -264,7 +263,7 @@
                         </script>
                     </form>
                 </td>
-                <td><a href="/day/{{ slot.date }}">View</a></td>
+                <!-- View link column removed -->
             </tr>
             {% endif %}
         {% endfor %}

@@ -110,14 +110,7 @@ def calendar():
     today = datetime.now().date()
     return render_template('calendar.html', slots=slots, users=users, today=today, timedelta=timedelta)
 
-@bp.route('/day/<date_str>')
-def day_detail(date_str):
-    slots = get_slots()
-    try:
-        slot = next(s for s in slots if str(s.date) == date_str)
-    except StopIteration:
-        abort(404)
-    return render_template('day_detail.html', slot=slot)
+
 
 # User sign-up for a watering slot
 @bp.route('/signup/<date_str>', methods=['GET', 'POST'])
@@ -136,7 +129,7 @@ def signup(date_str):
         scheduler.users.append(user)
         scheduler.assign_user(slot.date, user.name)
         flash('You have signed up!')
-        return redirect(url_for('main.day_detail', date_str=date_str))
+        return redirect(url_for('main.calendar'))
     return render_template('signup.html', slot=slot)
 
 # User removal from a watering slot
