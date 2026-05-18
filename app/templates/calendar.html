@@ -187,6 +187,7 @@
             <th>Status</th>
             <th>Weather</th>
             <th>Assigned To</th>
+            <th>Change Assignment</th>
             <th>Details</th>
         </tr>
         {% set cutoff = today - timedelta(days=2) %}
@@ -237,6 +238,13 @@
                     {% if temp_f is not none and slot.weather_code is not none %}
                         <span style="font-size:1em; color:#555;">{{ temp_f }}&deg;F</span>
                     {% endif %}
+                </td>
+                <td>
+                    {%- if slot.assigned_to and slot.assigned_to != '' -%}
+                        {{ slot.assigned_to }}
+                    {%- else -%}
+                        Missing
+                    {%- endif -%}
                 </td>
                 <td>
                     <form method="post" action="/assign_user" style="margin:0;display:inline;">
