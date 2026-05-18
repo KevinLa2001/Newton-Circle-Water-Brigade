@@ -1,6 +1,10 @@
 
 # Flask and other imports
+
 from flask import Blueprint, render_template, abort, request, redirect, url_for, flash
+@bp.route("/")
+def root():
+    return redirect(url_for("main.calendar"))
 
 bp = Blueprint('main', __name__)
 
