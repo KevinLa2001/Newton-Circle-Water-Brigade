@@ -234,7 +234,7 @@
                         {% set icon = '❓' %}
                     {% endif %}
                     {{ icon }}
-                    {% if temp_f is not none %}
+                    {% if temp_f is not none and slot.weather_code is not none %}
                         <span style="font-size:1em; color:#555;">{{ temp_f }}&deg;F</span>
                     {% endif %}
                 </td>

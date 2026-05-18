@@ -12,7 +12,7 @@
         <li>Heat Triggered: {{ 'Yes' if slot.is_heat_triggered else 'No' }}</li>
         <li>Rain Day: {{ 'Yes' if slot.is_rain_day else 'No' }}</li>
         <li>Rain Probability: {{ slot.rain_probability }}%</li>
-        <li>High Temperature: {{ slot.high_temp if slot.high_temp is not none else 'N/A' }}°F</li>
+        <li>High Temperature: {% if slot.high_temp is not none and slot.weather_code is not none %}{{ slot.high_temp }}°F{% else %}N/A{% endif %}</li>
         <li>
             Weather:
             {% if slot.rain_probability >= 50 %}

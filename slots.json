@@ -15,9 +15,9 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 6,
-    "high_temp": 18,
-    "weather_code": 3
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
   },
   {
     "date": "2026-05-12",
@@ -26,8 +26,8 @@
     "is_heat_triggered": false,
     "is_rain_day": false,
     "rain_probability": 0,
-    "high_temp": 17,
-    "weather_code": 3
+    "high_temp": null,
+    "weather_code": null
   },
   {
     "date": "2026-05-13",
@@ -35,29 +35,29 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 50,
-    "high_temp": 15,
-    "weather_code": 51
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
   },
   {
     "date": "2026-05-14",
     "assigned_to": "N/A",
     "status": "Rain",
     "is_heat_triggered": false,
-    "is_rain_day": true,
-    "rain_probability": 86,
-    "high_temp": 17,
-    "weather_code": 80
+    "is_rain_day": false,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
   },
   {
     "date": "2026-05-15",
-    "assigned_to": "",
-    "status": "Filled",
+    "assigned_to": "N/A",
+    "status": "Rain",
     "is_heat_triggered": false,
-    "is_rain_day": false,
-    "rain_probability": 47,
-    "high_temp": 16,
-    "weather_code": 80
+    "is_rain_day": true,
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
   },
   {
     "date": "2026-05-16",
@@ -65,9 +65,9 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 18,
-    "high_temp": 21,
-    "weather_code": 3
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
   },
   {
     "date": "2026-05-17",
@@ -75,19 +75,19 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 8,
-    "high_temp": 24,
-    "weather_code": 51
+    "rain_probability": 0,
+    "high_temp": null,
+    "weather_code": null
   },
   {
     "date": "2026-05-18",
-    "assigned_to": "Octavia and Jon",
+    "assigned_to": "Nance Urner",
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 0,
-    "high_temp": 0,
-    "weather_code": null
+    "rain_probability": 1,
+    "high_temp": 30,
+    "weather_code": 2
   },
   {
     "date": "2026-05-19",
@@ -95,9 +95,9 @@
     "status": "Open",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 0,
-    "high_temp": 0,
-    "weather_code": null
+    "rain_probability": 18,
+    "high_temp": 35,
+    "weather_code": 3
   },
   {
     "date": "2026-05-20",
@@ -105,9 +105,9 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 0,
-    "high_temp": 0,
-    "weather_code": null
+    "rain_probability": 53,
+    "high_temp": 34,
+    "weather_code": 51
   },
   {
     "date": "2026-05-21",
@@ -115,9 +115,9 @@
     "status": "Open",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 0,
-    "high_temp": 0,
-    "weather_code": null
+    "rain_probability": 6,
+    "high_temp": 19,
+    "weather_code": 3
   },
   {
     "date": "2026-05-22",
@@ -125,9 +125,9 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 0,
-    "high_temp": 0,
-    "weather_code": null
+    "rain_probability": 8,
+    "high_temp": 22,
+    "weather_code": 3
   },
   {
     "date": "2026-05-23",
@@ -135,9 +135,9 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 0,
-    "high_temp": 0,
-    "weather_code": null
+    "rain_probability": 43,
+    "high_temp": 18,
+    "weather_code": 51
   },
   {
     "date": "2026-05-24",
@@ -145,13 +145,13 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 0,
-    "high_temp": 0,
-    "weather_code": null
+    "rain_probability": 46,
+    "high_temp": 13,
+    "weather_code": 3
   },
   {
     "date": "2026-05-25",
-    "assigned_to": "Octavia and Jon",
+    "assigned_to": "",
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
