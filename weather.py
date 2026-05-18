@@ -2,8 +2,8 @@ import requests
 from datetime import date, timedelta
 
 # Example: Newton, MA coordinates
-LAT = 42.337
-LON = -71.209
+LAT = 47.6366  # Madison Park, Seattle latitude
+LON = -122.2792  # Madison Park, Seattle longitude
 
 def get_weather_forecast(target_date: date):
     """

@@ -85,9 +85,9 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 1,
-    "high_temp": 30,
-    "weather_code": 2
+    "rain_probability": 3,
+    "high_temp": 18,
+    "weather_code": 3
   },
   {
     "date": "2026-05-19",
@@ -95,9 +95,9 @@
     "status": "Open",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 18,
-    "high_temp": 35,
-    "weather_code": 3
+    "rain_probability": 10,
+    "high_temp": 17,
+    "weather_code": 51
   },
   {
     "date": "2026-05-20",
@@ -105,9 +105,9 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 53,
-    "high_temp": 34,
-    "weather_code": 51
+    "rain_probability": 0,
+    "high_temp": 19,
+    "weather_code": 3
   },
   {
     "date": "2026-05-21",
@@ -115,8 +115,8 @@
     "status": "Open",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 6,
-    "high_temp": 19,
+    "rain_probability": 0,
+    "high_temp": 23,
     "weather_code": 3
   },
   {
@@ -125,8 +125,8 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 8,
-    "high_temp": 22,
+    "rain_probability": 0,
+    "high_temp": 25,
     "weather_code": 3
   },
   {
@@ -135,9 +135,9 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 43,
-    "high_temp": 18,
-    "weather_code": 51
+    "rain_probability": 3,
+    "high_temp": 24,
+    "weather_code": 3
   },
   {
     "date": "2026-05-24",
@@ -145,8 +145,8 @@
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
-    "rain_probability": 46,
-    "high_temp": 13,
+    "rain_probability": 22,
+    "high_temp": 27,
     "weather_code": 3
   },
   {
