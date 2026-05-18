@@ -161,3 +161,38 @@ def remove(date_str):
     save_slots(scheduler.slots)
     flash('Weather automation applied to schedule!')
     return redirect(url_for('main.calendar'))
+
+@bp.route('/weather_update', methods=['GET', 'POST'])
+def weather_update():
+    # Only update weather if more than 1 hour has passed since last update
+    WEATHER_CACHE_FILE = os.path.join(os.path.dirname(__file__), '..', 'weather_last_update.txt')
+    now = time.time()
+    last_update = 0
+    if os.path.exists(WEATHER_CACHE_FILE):
+        try:
+            with open(WEATHER_CACHE_FILE, 'r') as f:
+                last_update = float(f.read().strip())
+        except Exception:
+            last_update = 0
+    if now - last_update > 4 * 3600:
+        from weather import get_weather_forecast
+        rain_forecast = {}
+        heat_forecast = {}
+        for slot in scheduler.slots:
+            rain_prob, high_temp, weather_code = get_weather_forecast(slot.date)
+            slot.rain_probability = rain_prob if rain_prob is not None else 0
+            slot.high_temp = high_temp if high_temp is not None else None
+            slot.weather_code = weather_code if weather_code is not None else None
+            if rain_prob is not None:
+                rain_forecast[slot.date] = rain_prob
+            if high_temp is not None:
+                heat_forecast[slot.date] = high_temp
+        scheduler.apply_rain_rule(rain_forecast, temp_forecast=heat_forecast)
+        scheduler.apply_heat_rule(heat_forecast)
+        save_slots(scheduler.slots)
+        with open(WEATHER_CACHE_FILE, 'w') as f:
+            f.write(str(now))
+        flash('Weather was automatically updated for the schedule.')
+    else:
+        flash('Weather was recently updated. Please try again later.')
+    return redirect(url_for('main.calendar'))
