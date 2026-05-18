@@ -210,7 +210,7 @@
                     {% set days_ahead = (slot.date - today).days if slot.date.__class__.__name__ == 'date' else (slot.date.date() - today).days if slot.date.__class__.__name__ == 'datetime' else (slot.date|string) %}
                     {% set temp = slot.high_temp %}
                     {% if temp is not none %}
-                        {% set temp_f = (temp * 9 // 5 + 32) %}
+                        {% set temp_f = (temp * 9 / 5 + 32) | round(1) %}
                     {% else %}
                         {% set temp_f = None %}
                     {% endif %}
