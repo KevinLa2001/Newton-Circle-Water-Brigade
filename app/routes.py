@@ -1,17 +1,43 @@
-
-# Flask and other imports
-
 from flask import Blueprint, render_template, abort, request, redirect, url_for, flash
+import sys
+import os
+import json
+import time
+from datetime import date, timedelta, datetime
+from .slot_persistence import save_slots, load_slots
+from watering_schedule import WateringScheduler, AdminSettings, User
+
+bp = Blueprint('main', __name__)
+
 @bp.route("/")
 def root():
     return redirect(url_for("main.calendar"))
 
-bp = Blueprint('main', __name__)
+# Persistent user storage
+USERS_FILE = os.path.join(os.path.dirname(__file__), '..', 'users.json')
+def load_users():
+    if os.path.exists(USERS_FILE):
+        with open(USERS_FILE, 'r') as f:
+            data = json.load(f)
+            return [User(u['name'], u['contacts']) for u in data]
+    return []
 
+def save_users(users):
+    with open(USERS_FILE, 'w') as f:
+        json.dump([{"name": u.name, "contacts": [u.contacts[0]]} for u in users], f, indent=2)
 
+def get_slots():
+    return scheduler.slots
 
-from .slot_persistence import save_slots, load_slots
-from datetime import date, timedelta
+# Initialize scheduler and generate schedule
+settings = AdminSettings()
+scheduler = WateringScheduler(settings)
+persisted_slots = load_slots()
+if persisted_slots:
+    scheduler.slots = persisted_slots
+loaded_users = load_users()
+for person in loaded_users:
+    scheduler.users.append(person)
 
 # Assign user to slot from dropdown
 @bp.route('/assign_user', methods=['POST'])
@@ -47,68 +73,6 @@ def new_user():
     return render_template('new_user.html', slot_date=slot_date)
 
 
-
-import sys
-import os
-import json
-import time
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from watering_schedule import WateringScheduler, AdminSettings, User
-
-# Persistent user storage
-USERS_FILE = os.path.join(os.path.dirname(__file__), '..', 'users.json')
-def load_users():
-    if os.path.exists(USERS_FILE):
-        with open(USERS_FILE, 'r') as f:
-            data = json.load(f)
-            return [User(u['name'], u['contacts']) for u in data]
-    else:
-        # Initial table if file missing
-        initial = [
-            {"name": "Octavia", "contact": "octaviagarden@gmail.com"},
-            {"name": "Jon", "contact": "jonrzulauf@gmail.com"},
-            {"name": "Matt", "contact": ""},
-            {"name": "Nate", "contact": ""},
-            {"name": "Kip", "contact": "kip.white@cbrealty.com"},
-            {"name": "Greg", "contact": ""},
-            {"name": "Melissa Scott", "contact": "melissa.chinn.scott@gmail.com"},
-            {"name": "Kevin Larkin", "contact": "kevinla_ms@hotmail.com"}
-        ]
-        with open(USERS_FILE, 'w') as f:
-            json.dump(initial, f, indent=2)
-        return [User(u['name'], u['contact']) for u in initial]
-
-def save_users(users):
-    with open(USERS_FILE, 'w') as f:
-            json.dump([{"name": u.name, "contacts": [u.contacts[0]]} for u in users], f, indent=2)
-
-
-def get_slots():
-    # For demo, just return all slots for the current season
-    return scheduler.slots
-
-# Initialize scheduler and generate schedule
-settings = AdminSettings()
-scheduler = WateringScheduler(settings)
-persisted_slots = load_slots()
-if persisted_slots:
-    scheduler.slots = persisted_slots
-else:
-    scheduler.generate_schedule()
-
-# Load users from persistent storage
-loaded_users = load_users()
-user_names = set()
-for person in loaded_users:
-    if person.name not in user_names:
-        scheduler.users.append(person)
-        user_names.add(person.name)
-
-@bp.route('/')
-def index():
-    return render_template('index.html')
-
-from datetime import datetime, timedelta
 
 @bp.route('/calendar')
 def calendar():
@@ -189,26 +153,7 @@ def remove(date_str):
         removed = scheduler.remove_user(slot.date, name)
         if removed:
             flash('You have been removed from this slot.')
-        else:
-            flash('No matching assignment found.')
-        return redirect(url_for('main.day_detail', date_str=date_str))
-    return render_template('remove.html', slot=slot)
-
-@bp.route('/weather_update')
-def weather_update():
-    from weather import get_weather_forecast
     rain_forecast = {}
-    heat_forecast = {}
-    for slot in scheduler.slots:
-        rain_prob, high_temp, weather_code = get_weather_forecast(slot.date)
-        # Always set the values, even if None (for >7 days out, will be None)
-        slot.rain_probability = rain_prob if rain_prob is not None else 0
-        slot.high_temp = high_temp if high_temp is not None else None
-        slot.weather_code = weather_code if weather_code is not None else None
-        if rain_prob is not None:
-            rain_forecast[slot.date] = rain_prob
-        if high_temp is not None:
-            heat_forecast[slot.date] = high_temp
     # Pass both rain and temp forecasts to apply_rain_rule
     scheduler.apply_rain_rule(rain_forecast, temp_forecast=heat_forecast)
     scheduler.apply_heat_rule(heat_forecast)
