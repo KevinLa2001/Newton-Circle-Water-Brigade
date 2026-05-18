@@ -1,5 +1,24 @@
 import json
 import os
+import shutil
+from datetime import date
+from watering_schedule import WateringSlot
+
+def get_slots_file():
+    # Use /tmp/slots.json on Render, else use local slots.json
+    render_env = os.environ.get('RENDER', None)
+    if render_env is not None or os.environ.get('RENDER_EXTERNAL_HOSTNAME'):
+        tmp_path = '/tmp/slots.json'
+        orig_path = os.path.join(os.path.dirname(__file__), '..', 'slots.json')
+        if not os.path.exists(tmp_path):
+            shutil.copyfile(orig_path, tmp_path)
+        return tmp_path
+    else:
+        return os.path.join(os.path.dirname(__file__), '..', 'slots.json')
+
+SLOTS_FILE = get_slots_file()
+import json
+import os
 from datetime import date
 from watering_schedule import WateringSlot
 

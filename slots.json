@@ -127,7 +127,7 @@
     "is_rain_day": false,
     "rain_probability": 0,
     "high_temp": 25,
-    "weather_code": 3
+    "weather_code": 2
   },
   {
     "date": "2026-05-23",
@@ -136,7 +136,7 @@
     "is_heat_triggered": false,
     "is_rain_day": false,
     "rain_probability": 3,
-    "high_temp": 24,
+    "high_temp": 23,
     "weather_code": 3
   },
   {
@@ -146,12 +146,12 @@
     "is_heat_triggered": false,
     "is_rain_day": false,
     "rain_probability": 22,
-    "high_temp": 27,
-    "weather_code": 3
+    "high_temp": 14,
+    "weather_code": 51
   },
   {
     "date": "2026-05-25",
-    "assigned_to": "",
+    "assigned_to": "Mat and Nathan",
     "status": "Filled",
     "is_heat_triggered": false,
     "is_rain_day": false,
